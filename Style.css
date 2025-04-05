@@ -405,7 +405,7 @@ footer{
 
     #Omoss {
         width: inherit;
-        height: 400px;
+        height: 800px;
         background-color: rgb(215, 215, 215);
         display: flex;
         flex-direction: column;
@@ -430,6 +430,10 @@ footer{
         background-repeat: no-repeat;
         overflow: hidden;
     }
+
+    #sec2_img2::after{
+        display: none;
+    }    
 
     #sec2_img1{
         display: none;
