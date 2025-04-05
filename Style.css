@@ -50,9 +50,6 @@ body{
 }
 
 #main_img_small:hover{
-    max-width: 310;
-    max-height: 150;
-    
     /*https://mail.google.com/mail/u/1?ui=2&ik=bb05224394&attid=0.1&permmsgid=msg-f:1804220812670646894&th=1909e1451b99ba6e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9GpayroX4NbH6ueLImKxKCnul01aHFi2dnO0O9yssX2gOMT0YRgqS1HLtqMVQujVz1yFlkvqV3teNUJ8_lSOnQ_9G1vZ6HVLtB73FvvBslxeL1n_UXX03QTEE&disp=emb*/
     background-image: url(main_img_small_green.png);
 }
@@ -67,6 +64,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, 0 0, right top;
+    width: 100%;
     }
 
 #Omoss {
@@ -309,4 +307,140 @@ footer{
     width: 100%;
     justify-content: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait){
+    #main_img_big{
+        background-repeat: no-repeat;
+        object-fit: contain;
+        height: 550;
+        width: 100%;
+    }
+
+    #Hem {
+        height: 550;
+        display: flex;
+        justify-content: center;
+        background-image: url(home_img.png);
+        /*https://mail.google.com/mail/u/1?ui=2&ik=bb05224394&attid=0.1&permmsgid=msg-f:1805557576270029461&th=190ea10ca3172295&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8gXlw8OJBnmhG6uIJ8Rmm2J9LpYLI-MLyvy51g06xk5bqFrw--PNNXIwFsMzhsGv7GzqOld8kN2dmZAzZj7EOuhFOw84Tj84q85C3xLncJkC0yP9nIHeIYXy4&disp=emb*/
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, 0 0, right top;
+        width: 100%;
+        }
+
+    #myheader{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        border: solid 1px black;
+    }
+
+    .Omoss_text{
+        max-width: 20px;
+        
+        margin: 0;
+        align-self: center;
+    }
+
+    #main_img_small{
+        display: none;
+       
+    }
+
+    .nav-item{
+        text-align: center!important;
+        justify-content: space-around;
+        margin: 10px;
+        margin-left: 0;
+        gap: 10px;
+        font-size: 10px;
+        width: 100%;
+        height: 10px;
+        
+    }
+
+    #container{
+        
+        display: flex;
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
+        
+     }
+
+     .nav{
+        flex: 1;
+        width: 100%;
+        left: 0;
+        align-items: center !important;
+        text-align: center !important;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .nav.nav-pills{
+        flex: 1;
+        justify-content: center !important;
+        height: 50px;
+        width: 100%;
+        left: 0;
+
+    }
+
+    footer{
+        
+        display: flex;
+        height: 100px;
+        border: solid gray;
+        border-radius: 10px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+        display: none;
+    }
+
+    #Omoss {
+        width: inherit;
+        height: 400px;
+        background-color: rgb(215, 215, 215);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+    }
+
+    .Omoss_text{
+        flex: 1;
+        flex-direction: row;
+        max-width: 10px;
+        height: 100px;
+        overflow: hidden;
+        
+    }
+
+    .sec2_img{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #sec2_img1{
+        display: none;
+    }
+
+    #sec2_img3{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    
 }
